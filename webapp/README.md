@@ -40,6 +40,8 @@ http -> https, namecheap?
 add this to github 
 make it do something useful 
 buy domains and set up redirects to load in sudokus from other sites 
+master branch protection 
+deploy from push to master on github 
 
 # Useful/used links 
 * Tailwind setup with elixir ([link](https://pragmaticstudio.com/tutorials/adding-tailwind-css-to-phoenix))
