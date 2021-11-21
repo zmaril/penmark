@@ -5,26 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= csrf_meta_tag() %>
-    <%= live_title_tag assigns[:page_title] || "Penmark", suffix: " · Phoenix Framework" %>
+    <%= live_title_tag assigns[:page_title] || "Penmark", suffix: " · Sudokus and such" %>
     <link phx-track-static rel="stylesheet" href={Routes.static_path(@conn, "/assets/app.css")}/>
     <script defer phx-track-static type="text/javascript" src={Routes.static_path(@conn, "/assets/app.js")}></script>
   </head>
-  <body>
-    <header>
-      <section class="container">
-        <nav>
-          <ul>
-            <li><a href="https://hexdocs.pm/phoenix/overview.html">Get Started</a></li>
-            <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
-              <li><%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home) %></li>
-            <% end %>
-          </ul>
-        </nav>
-        <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src={Routes.static_path(@conn, "/images/phoenix.png")} alt="Phoenix Framework Logo"/>
-        </a>
-      </section>
-    </header>
+  <body class="h-full">
+    <nav class="border-b border-gray-200 bg-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <div class="flex-shrink-0 flex items-center">
+              <img class="block lg:block h-8 w-auto" src={Routes.static_path(@conn, "/images/white_quill.svg")} alt="Workflow">
+            </div>
+            <div class="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+              <a class="inline-flex items-center px-1 pt-1 text-xl font-medium text-gray-300" href="/"> penmark </a>
+              <%= if function_exported?(Routes, :live_dashboard_path, 2) do %>
+                <%= link "LiveDashboard", to: Routes.live_dashboard_path(@conn, :home), class: "inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-300" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
     <%= @inner_content %>
   </body>
 </html>

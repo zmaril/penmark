@@ -6,6 +6,7 @@ Everybody loves sudoku.
 
 ```sh
 git clone git@github.com/zmaril/penmark
+cd webapp
 mix deps.get
 mix ecto.setup 
 mix phx.server 
