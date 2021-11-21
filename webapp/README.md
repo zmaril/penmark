@@ -43,6 +43,11 @@ make it do something useful
 buy domains and set up redirects to load in sudokus from other sites 
 master branch protection 
 deploy from push to master on github 
+favicon 
+social descriptions 
+generate images of things 
+generate gifs 
+solve sudokous 
 
 # Useful/used links 
 * Tailwind setup with elixir ([link](https://pragmaticstudio.com/tutorials/adding-tailwind-css-to-phoenix))
