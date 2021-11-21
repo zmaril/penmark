@@ -1,4 +1,4 @@
-# [penmark](penmark.club)
+# [penmark](https://penmark.club)
 all those numbers need a new place to live
 
 * /notes - notes about sudoku and it's variants 
