@@ -12,7 +12,7 @@ defmodule PenmarkWeb.SudokuLive do
     <.grid sudoku={@sudoku} />
     </div>
     <div class="w-1/3">
-    <.controls />
+    <.controls selected_number={@selected_number} />
     </div>
     </div>
     </div>
@@ -20,16 +20,16 @@ defmodule PenmarkWeb.SudokuLive do
   end
 
   def get_empty_grid() do
-    for x <- 1..9 do
-      for y <- 1..9 do
+    for _ <- 1..9 do
+      for _ <- 1..9 do
         nil
       end
     end
   end
 
   def get_grid() do
-    for x <- 1..9 do
-      for y <- 1..9 do
+    for _ <- 1..9 do
+      for _ <- 1..9 do
         if :rand.uniform(2) == 1 do
           :rand.uniform(9)
         else
@@ -40,16 +40,35 @@ defmodule PenmarkWeb.SudokuLive do
   end
 
   def mount(_params, %{}, socket) do
+    socket = assign(socket, :selected_number, nil)
+
     if not connected?(socket) do
       socket =
         socket
         |> assign(:sudoku, get_empty_grid())
+
       {:ok, socket}
     else
       socket =
         socket
         |> assign(:sudoku, get_grid())
+
       {:ok, socket}
     end
+  end
+
+  def handle_event("select_cell", %{"cell" => [x, y]}, socket) do
+    if is_nil(socket.assigns.selected_number) do
+      {:noreply, socket}
+    else
+      sudoku = put_in(socket.assigns.sudoku, [Access.at(x),Access.at(y)], socket.assigns.selected_number)
+      socket = assign(socket, :sudoku, sudoku)
+      {:noreply, socket}
+    end
+  end
+
+  def handle_event("select_number", %{"number" => number}, socket) do
+    socket = assign(socket, :selected_number, number)
+    {:noreply, socket}
   end
 end
