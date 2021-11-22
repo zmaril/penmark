@@ -51,3 +51,4 @@ solve sudokous
 
 # Useful/used links 
 * Tailwind setup with elixir ([link](https://pragmaticstudio.com/tutorials/adding-tailwind-css-to-phoenix))
+* tictac elixir app on fly ([link](https://github.com/fly-apps/tictac))
