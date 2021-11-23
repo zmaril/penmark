@@ -7,3 +7,13 @@ https://gist.github.com/xlphs/ab08f52bab51f2b5922decacea177b0f
 
 https://www.stolaf.edu//people/hansonr/sudoku/12rules.htm
 http://forum.logic-masters.de/showthread.php?tid=1990
+
+
+https://github.com/robx/pzprjs 
+puzz.link
+
+cross+a 
+
+http://www.cross-plus-a.com/sudoku.htm
+
+https://qqwing.com/
