@@ -17,3 +17,11 @@ cross+a
 http://www.cross-plus-a.com/sudoku.htm
 
 https://qqwing.com/
+https://en.wikipedia.org/wiki/Nikoli_(publisher)
+
+http://www.sudokusnake.com/
+http://www.sudokusnake.com/goldennugget.php
+https://www.janko.at/Raetsel/Nikoli/index.htm
+https://www.worldpuzzle.org/files/99/WSC2016_InstructionBooklet_v2.pdf
+
+https://en.wikipedia.org/wiki/Glossary_of_Sudoku

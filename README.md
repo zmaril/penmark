@@ -7,7 +7,7 @@ all those numbers need a new place to live
 
 # Roadmap 
 
-* Create a library in rust that embodies the ideas in `Penmark Puzzling Language` while still just being a rust library. 
+* Create a library in rust that embodies the ideas in [`Penmark Puzzling Language`](https://github.com/zmaril/penmark/blob/7469b7e4b46279a816c9c8f48b23de039ba6bc3b/notes/PenmarkPuzzlingLanguage.md) while still just being a rust library. 
 * Create a library in elixir with rustler that wraps the penmark rust library in genservers. 
 * Create a liveview application that uses the above library to make creating and solving puzzles easier. 
 * Make a bunch of cool puzzles. 
