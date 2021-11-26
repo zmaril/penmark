@@ -1,8 +1,6 @@
 mod types; 
 
-pub mod penmark { 
-
-}
+pub use self::types::*;
 /* 
 
 Solution
