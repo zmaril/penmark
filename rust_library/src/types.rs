@@ -1,15 +1,18 @@
 use std::collections::HashSet;
 
+#[derive(Debug, Eq, PartialEq)]
 pub struct Puzzle {
     pub layout: Grid,
     pub givens: Vec<Cell>,
     pub rules: Vec<Rule>
 }
 
+#[derive(Debug, Eq, PartialEq)]
 pub struct Rule {
-    
+
 }
 
+#[derive(Debug, Eq, PartialEq)]
 pub struct Cell {
      //coordinates: Coordinate,
      //value: CellValue 
@@ -39,6 +42,7 @@ pub struct Cell {
 //     y: u8
 // }
 
+#[derive(Debug, Eq, PartialEq)]
 pub struct Grid {
 
 }

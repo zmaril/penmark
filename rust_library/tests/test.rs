@@ -11,3 +11,23 @@ fn basic_sudoku() {
     let result = 2 + 2;
     assert_eq!(result, 4);
 }
+
+#[test]
+fn wrong_sudoku(){
+    let wrong = "
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    - - - + - - - + - - - 
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    - - - + - - - + - - - 
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    1 2 3 | . . . | . . . 
+    ";
+
+    let results = parse_sudoku(wrong);
+    assert_eq!(results.layout, Grid{});
+}
