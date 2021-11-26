@@ -36,6 +36,10 @@ app/entry remote
 // TODO set up livedashboard and livebook
 ```
 
+
+# Useful/used links 
+* Tailwind setup with elixir ([link](https://pragmaticstudio.com/tutorials/adding-tailwind-css-to-phoenix))
+* tictac elixir app on fly ([link](https://github.com/fly-apps/tictac))
 # TODO's 
 http -> https, namecheap? 
 add this to github 
@@ -48,7 +52,5 @@ social descriptions
 generate images of things 
 generate gifs 
 solve sudokous 
-
-# Useful/used links 
-* Tailwind setup with elixir ([link](https://pragmaticstudio.com/tutorials/adding-tailwind-css-to-phoenix))
-* tictac elixir app on fly ([link](https://github.com/fly-apps/tictac))
+setting, editing puzzles 
+playing,solving, editing solutions 
