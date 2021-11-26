@@ -1,8 +1,36 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        let result = 2 + 2;
-        assert_eq!(result, 4);
-    }
+mod types; 
+
+pub mod penmark { 
+
 }
+/* 
+
+Solution
+
+Cell 
+.coordinate <Coordinate Type> 
+.value
+
+Candidates 
+Pairs 
+
+
+
+Interfaces
+Grid
+- Layout 
+- Values
+* mapping from coordinates to values
+
+
+VisualGrid
+*/
+/*
+Coordinate 
+- CartesianCoordinate 
+- HexCoordinate 
+
+Implementations 
+- CartesianGrid
+- HexGrid
+*/
