@@ -19,6 +19,8 @@ pub fn check_rules(puzzle: Puzzle) -> bool {
     for row_index in 0..9 {
         let row = puzzle[row_index];
         if contains_duplicates(row) {
+            //println!("row_index: {}", row_index);
+            //println!("Failed row");
             return false
         }
     }
@@ -29,6 +31,8 @@ pub fn check_rules(puzzle: Puzzle) -> bool {
             column[row_index] = puzzle[row_index][column_index]
         }
         if contains_duplicates(column) {
+            //println!("Failed column");
+            //println!("column_index: {}", column_index);
             return false
         }
     }
@@ -44,6 +48,7 @@ pub fn check_rules(puzzle: Puzzle) -> bool {
                 }
             }
             if contains_duplicates(boxx) {
+                //println!("Failed box");
                 return false
             }
         }
