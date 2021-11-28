@@ -3,6 +3,7 @@ open = {"."}
 cell = {digit | open}
 line = {(digit | open)+ }
 
-WHITESPACE = _{" " | "|"}
+border_line = _{("-" | "+")+}
+WHITESPACE = _{" " | "|" | "-"} 
 
-sudoku = { "\n"? ~ (line ~ "\n")+ }
+sudoku = { "\n"? ~ ((border_line | line) ~ "\n"?)+ ~ EOI}
