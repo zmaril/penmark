@@ -1,8 +1,8 @@
-alpha = { 'a'..'z' | 'A'..'Z' }
-digit = { '0'..'9' }
+digit = { '1'..'9' }
+open = {"."}
+cell = {digit | open}
+line = {(digit | open)+ }
 
-ident = { (alpha | digit)+ }
+WHITESPACE = _{" " | "|"}
 
-ident_list = _{ !digit ~ ident ~ (" " ~ ident)+ }
-          // ^
-          // ident_list rule is silent (produces no tokens or error reports)
+sudoku = { "\n"? ~ (line ~ "\n")+ }

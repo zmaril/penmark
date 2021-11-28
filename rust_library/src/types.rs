@@ -1,11 +1,13 @@
 use std::collections::HashSet;
 
 #[derive(Debug, Eq, PartialEq)]
-pub struct Puzzle {
+pub struct PuzzleO {
     pub layout: Grid,
     pub givens: Vec<Cell>,
     pub rules: Vec<Rule>
 }
+
+pub type Puzzle = [[u8; 9]; 9];
 
 #[derive(Debug, Eq, PartialEq)]
 pub struct Rule {
