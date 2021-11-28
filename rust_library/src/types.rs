@@ -10,4 +10,4 @@ pub struct B {}
 pub struct C {}
 
 #[derive(Debug, Eq, PartialEq)]
-pub struct Grid {}
+pub struct D {}
